@@ -4,9 +4,7 @@ ZYN CODE is a real-time code collaboration web application that allows multiple 
 
 ## Live Demo
 
-You can try out ZYN CODE by visiting the [live demo](https://zyn-code.onrender.com). Create or join a room and start collaborating with others in real time!
-### DEMO VIDEO
-https://github.com/Yadvendra016/CodeCast/assets/91756355/dadc9f09-ef24-4c73-aa43-223f7a817f9f
+You can try out ZYN CODE by visiting the [live demo](https://zyncode.onrender.com). Create or join a room and start collaborating with others in real time!
 
 ## Features
 
@@ -30,7 +28,7 @@ https://github.com/Yadvendra016/CodeCast/assets/91756355/dadc9f09-ef24-4c73-aa43
 
 ## Usage
 
-1. Open the [ZYN CODE live demo](https://zyn-code.onrender.com).
+1. Open the [ZYN CODE live demo](https://zyncode.onrender.com).
 2. Enter a Room ID or generate a new one.
 3. Set your username.
 4. Start collaborating with others in the same room.
@@ -43,7 +41,7 @@ If you want to run ZYN CODE locally or contribute to its development, follow the
 
    ```bash
    git clone https://github.com/Nav3005/ZynCode.git
-   cd Zyn-code
+   cd ZynCode
    ```
 2. Install dependencies:
    ```
