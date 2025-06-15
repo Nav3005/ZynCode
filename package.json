@@ -1,0 +1,21 @@
+{
+  "name": "zyn-code",
+  "version": "1.0.0",
+  "description": "ZYN CODE is a real-time code collaboration web application that allows multiple users to collaborate on code in the same virtual room. It's built using the MERN (MongoDB, Express.js, React, Node.js) stack and Socket.IO for real-time communication.",
+  "homepage": "https://github.com/snehapm04/zyn-code#readme",
+  "bugs": {
+    "url": "https://github.com/snehapm04/zyn-code/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snehapm04/zyn-code.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
