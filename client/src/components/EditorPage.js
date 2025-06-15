@@ -50,7 +50,7 @@ end.`,
   csharp: `using System;
 
 class Program {
-    static void Main(string[] args) {
+    static void Main(String[] args) {
         Console.WriteLine("Hello World !!");
     }
 }`,
@@ -198,24 +198,26 @@ function EditorPage() {
 
   return (
     <div className="container-fluid vh-100 d-flex flex-column" style={{
-      background: '#0f172a'
+      background: '#000000',
+      backdropFilter: 'blur(10px)',
+      boxShadow: '0 8px 32px 0 rgba(13, 71, 161, 0.37)'
     }}>
       <div className="row flex-grow-1">
         {/* Client panel */}
         <div className="col-md-2 text-light d-flex flex-column" style={{
-          background: 'rgba(45, 55, 72, 0.9)',
+          background: '#000000',
           backdropFilter: 'blur(10px)',
-          borderRight: '1px solid rgba(74, 222, 128, 0.3)',
-          boxShadow: '0 8px 32px 0 rgba(45, 55, 72, 0.37)',
+          borderRight: '1px solid rgba(218, 165, 32, 0.3)',
+          boxShadow: '0 8px 32px 0 rgba(13, 71, 161, 0.37)',
           padding: '1.5rem'
         }}>
           <img
-            src="/images/codecast.png"
+            src="/images/zyncode.png"
             alt="Logo"
             className="img-fluid mx-auto mb-4"
             style={{ 
               maxWidth: "150px",
-              filter: 'drop-shadow(0 0 10px rgba(218, 165, 32, 0.3))',
+              filter: 'drop-shadow(0 0 10px rgba(0, 0, 0, 0.3))',
               transition: 'transform 0.3s ease',
               ':hover': {
                 transform: 'scale(1.05)'
@@ -225,14 +227,17 @@ function EditorPage() {
           <hr style={{ borderTop: '1px solid rgba(218, 165, 32, 0.3)' }} />
 
           {/* Client list container */}
-          <div className="d-flex flex-column flex-grow-1 overflow-auto">
+          <div className="d-flex flex-column flex-grow-1 overflow-auto" style={{
+            background: '#000000',
+            backdropFilter: 'blur(10px)',
+          }}>
             <span className="mb-2" style={{ fontWeight: 'bold', color: '#daa520' }}>Members</span>
             {clients.map((client) => (
               <Client key={client.socketId} username={client.username} />
             ))}
           </div>
 
-          <hr />
+          <hr style={{ borderTop: '1px solid rgba(218, 165, 32, 0.3)' }} />
           {/* Buttons */}
           <div className="mt-auto mb-3">
             <button className="btn w-100 mb-2" onClick={copyRoomId}
@@ -263,13 +268,17 @@ function EditorPage() {
         </div>
 
         {/* Editor panel */}
-        <div className="col-md-10 text-light d-flex flex-column">
+        <div className="col-md-10 text-light d-flex flex-column" style={{
+          background: '#000000',
+          backdropFilter: 'blur(10px)',
+          boxShadow: '0 8px 32px 0 rgba(13, 71, 161, 0.37)'
+        }}>
           {/* Language selector */}
           <div className="p-2 d-flex justify-content-end" style={{
-            background: 'rgba(45, 55, 72, 0.9)',
+            background: '#000000',
             backdropFilter: 'blur(10px)',
-            borderBottom: '1px solid rgba(74, 222, 128, 0.3)',
-            boxShadow: '0 4px 15px rgba(45, 55, 72, 0.3)'
+            borderBottom: '1px solid rgba(218, 165, 32, 0.3)',
+            boxShadow: '0 4px 15px rgba(13, 71, 161, 0.37)'
           }}>
             <select
               className="form-select w-auto" style={{
@@ -331,10 +340,10 @@ function EditorPage() {
           transition: "height 0.3s ease-in-out",
           overflowY: "auto",
           zIndex: 1040,
-          background: 'rgba(45, 55, 72, 0.9)',
+          background: '#000000',
           backdropFilter: 'blur(10px)',
-          borderTop: '1px solid rgba(74, 222, 128, 0.3)',
-          boxShadow: '0 -8px 32px 0 rgba(45, 55, 72, 0.37)',
+          borderTop: '1px solid rgba(218, 165, 32, 0.3)',
+          boxShadow: '0 -8px 32px 0 rgba(13, 71, 161, 0.37)',
           padding: '1.5rem'
         }}
       >
@@ -346,10 +355,10 @@ function EditorPage() {
               onClick={runCode}
               disabled={isCompiling}
               style={{
-                background: '#4ade80',
+                background: '#daa520',
                 border: 'none',
                 color: 'white',
-                boxShadow: '0 4px 15px rgba(74, 222, 128, 0.3)',
+                boxShadow: '0 4px 15px rgba(218, 165, 32, 0.3)',
                 fontWeight: 'bold',
                 letterSpacing: '1px'
               }}
@@ -358,10 +367,10 @@ function EditorPage() {
             </button>
             <button className="btn" onClick={toggleCompileWindow}
               style={{
-                background: '#2d3748',
+                background: '#1a237e',
                 border: 'none',
                 color: 'white',
-                boxShadow: '0 4px 15px rgba(45, 55, 72, 0.3)',
+                boxShadow: '0 4px 15px rgba(26, 35, 126, 0.3)',
                 fontWeight: 'bold',
                 letterSpacing: '1px'
               }}
@@ -372,7 +381,7 @@ function EditorPage() {
         </div>
         <pre className="p-3 rounded" style={{
           background: 'rgba(255, 255, 255, 0.1)',
-          border: '1px solid rgba(74, 222, 128, 0.3)',
+          border: '1px solid rgba(218, 165, 32, 0.3)',
           color: 'white',
           fontWeight: 'bold',
           whiteSpace: 'pre-wrap',

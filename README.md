@@ -15,6 +15,9 @@ https://github.com/Yadvendra016/CodeCast/assets/91756355/dadc9f09-ef24-4c73-aa43
 - Real-time code collaboration with other users in the same room.
 - Changes made by one user are instantly reflected on all connected clients.
 - Code highlighting and editor customization options.
+- Dynamic color scheme on the editor page for an enhanced user experience.
+- Improved compiler output for better error readability and debugging.
+- Boilerplate code for various programming languages to get started quickly.
 
 ## Technologies Used
 
@@ -39,8 +42,8 @@ If you want to run ZYN CODE locally or contribute to its development, follow the
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/zyn-code.git
-   cd zyn-code
+   git clone https://github.com/Nav3005/ZynCode.git
+   cd Zyn-code
    ```
 2. Install dependencies:
    ```

@@ -49,19 +49,19 @@ function Home() {
         <div className="row justify-content-center align-items-center min-vh-100">
           <div className="col-12 col-md-6">
             <div className="card shadow-lg p-2 mb-5 rounded glow" style={{
-              background: 'rgba(26, 35, 126, 0.7)',
+              background: '#000000',
               backdropFilter: 'blur(10px)',
               border: '1px solid rgba(218, 165, 32, 0.3)',
               boxShadow: '0 8px 32px 0 rgba(13, 71, 161, 0.37)'
             }}>
               <div className="card-body text-center">
                 <img
-                  src="/images/codecast.png"
+                  src="/images/zyncode.png"
                   alt="Logo"
                   className="img-fluid mx-auto d-block mb-4"
                   style={{ 
                     maxWidth: "150px",
-                    filter: 'drop-shadow(0 0 10px rgba(218, 165, 32, 0.3))',
+                    filter: 'drop-shadow(0 0 10px rgba(128, 128, 128, 0.3))',
                     transition: 'transform 0.3s ease',
                     ':hover': {
                       transform: 'scale(1.05)'
@@ -81,8 +81,8 @@ function Home() {
                     placeholder="ROOM ID"
                     onKeyUp={handleInputEnter}
                     style={{
-                      background: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(218, 165, 32, 0.3)',
+                      background: 'rgba(255, 255, 255, 0.47)',
+                      border: '1px solid rgba(128, 128, 128, 0.3)',
                       color: 'white',
                       transition: 'all 0.3s ease',
                       '::placeholder': {
@@ -100,8 +100,8 @@ function Home() {
                     placeholder="USERNAME"
                     onKeyUp={handleInputEnter}
                     style={{
-                      background: 'rgba(255, 255, 255, 0.1)',
-                      border: '1px solid rgba(218, 165, 32, 0.3)',
+                      background: 'rgba(255, 255, 255, 0.47)',
+                      border: '1px solid rgba(128, 128, 128, 0.3)',
                       color: 'white',
                       transition: 'all 0.3s ease',
                       '::placeholder': {
